@@ -32,7 +32,11 @@ public class UsuarioService {
 	//DELETE
 	public boolean eliminarUsuario(Long cedula) {
 		try {
-			usuarioInterface.existsById(cedula);
+			if (usuarioInterface.existsById(cedula)){
+				Usuario user = usuarioInterface.findFirstByCedulaUsuario(cedula);
+				usuarioInterface.delete(user);
+			}
+
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
