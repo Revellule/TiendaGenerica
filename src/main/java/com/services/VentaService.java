@@ -32,7 +32,10 @@ public class VentaService {
 	//DELETE
 	public boolean eliminarVenta(Long codigo) {
 		try {
-			ventaInterface.existsById(codigo);
+			if (ventaInterface.existsById(codigo)){
+				Venta sold = ventaInterface.findFirstByCodigoVenta(codigo);
+				ventaInterface.delete(sold);
+			}
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

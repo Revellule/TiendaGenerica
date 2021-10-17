@@ -7,5 +7,6 @@ import com.modelo.Proveedor;
 
 @Repository
 public interface ProveedorInterface extends CrudRepository<Proveedor, Long>{
+    Proveedor findFirstByNitProveedor (Long nit);
 
 }

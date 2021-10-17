@@ -32,7 +32,10 @@ public class ClienteService {
 	//DELETE
 	public boolean eliminarCliente(Long cedula) {
 		try {
-			clienteInterface.existsById(cedula);
+			if (clienteInterface.existsById(cedula)){
+				Cliente client = clienteInterface.findFirstByCedulaCliente(cedula);
+				clienteInterface.delete(client);
+			}
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

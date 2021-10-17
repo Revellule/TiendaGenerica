@@ -32,7 +32,10 @@ public class ProductoService {
 	//DELETE
 	public boolean eliminarProducto(Long codigo) {
 		try {
-			productoInterface.existsById(codigo);
+			if (productoInterface.existsById(codigo)){
+				Producto product = productoInterface.findFirstByCodigoProducto(codigo);
+				productoInterface.delete(product);
+			}
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -32,7 +32,10 @@ public class ProveedorService {
 	//DELETE
 	public boolean eliminarProveedor(Long nit) {
 		try {
-			proveedorInterface.existsById(nit);
+			if (proveedorInterface.existsById(nit)){
+				Proveedor seller = proveedorInterface.findFirstByNitProveedor(nit);
+				proveedorInterface.delete(seller);
+			}
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

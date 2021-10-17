@@ -7,5 +7,6 @@ import com.modelo.Venta;
 
 @Repository
 public interface VentaInterface extends CrudRepository<Venta, Long>{
+    Venta findFirstByCodigoVenta (Long codigo);
 
 }
