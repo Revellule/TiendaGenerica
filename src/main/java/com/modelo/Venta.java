@@ -13,6 +13,7 @@ public class Venta {
 	private float valorVenta;
 	private float totalVenta;
 	@ManyToOne
+	@JoinColumn(name = "cedula_cliente")
 	private Cliente cedulaCliente;
 	@ManyToOne
 	@JoinColumn(name = "cedula_usuario")
