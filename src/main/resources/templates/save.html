@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th = "http://www.thymeleaf.org"> 
+<head>
+<meta charset="UTF-8">
+<title>Usuario</title>
+<!--Bootstrap CCS-->
+<link href = "../static/css/bootstrap.css/" rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+	<div class="container">
+		<form action "#" th:action="@{/save}" th:objet="${Usuario}" method="post"
+    	<!-- Content here -->
+    		<!-- Text input-->
+        	<div class="form-group">
+        		<label class="col-md-4 control-label" for="UsuarioID">Nombre de Usuario:</label>  
+          		<div class="col-md-4">
+          			<input id="UsuarioID" name="UsuarioID" type="text" placeholder="" class="form-control input-md" required="">
+          			<span class="help-block">Ingrese el nombre de usuario</span>  
+          		</div>
+        	</div>
+        
+        	<!-- Password input-->
+        	<div class="form-group">
+        		<label class="col-md-4 control-label" for="clave">Ingrese clave:</label>
+          		<div class="col-md-4">
+            		<input id="Clave" name="Clave" type="password" placeholder="clave" class="form-control input-md" required="">
+            		<span class="help-block">Escriba una contraseña</span>
+          		</div>
+        	</div>
+        
+        	<!-- Text input-->
+        	<div class="form-group">
+          		<label class="col-md-4 control-label" for="Nombre">Nombre Completo:</label>  
+          		<div class="col-md-4">
+          			<input id="Nombre" name="Nombre" type="text" placeholder="Nombre Apellidos" class="form-control input-md" required="">
+          			<span class="help-block">Ingres el nombre y apellidos completos</span>  
+          		</div>
+        	</div>
+        
+        	<!-- Text input-->
+        	<div class="form-group">
+          		<label class="col-md-4 control-label" for="Correo">e-mail:</label>  
+          		<div class="col-md-4">
+          			<input id="Correo" name="Correo" type="text" placeholder="correo@ejemplo.com" class="form-control input-md" required="">
+          			<span class="help-block">Ingrese una cuenta de correo válida</span>  
+          		</div>
+        	</div>
+        
+        	<!-- Text input-->
+        	<div class="form-group">
+          		<label class="col-md-4 control-label" for="nit_tienda">NIT:</label>  
+          		<div class="col-md-4">
+          			<input id="nit_tienda" name="nit_tienda" type="text" placeholder="nit" class="form-control input-md" required="">
+          			<span class="help-block">Ingrese un número de NIT</span>  
+          		</div>
+        	</div>
+        	<button type="summit" class = "btn btn-success">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>

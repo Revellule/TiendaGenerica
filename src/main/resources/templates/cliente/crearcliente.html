@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head th:replace = "Tema :: head"></head>
+	
+	<body>
+		<header th:replace="Tema :: header"></header>
+		
+		<!--FORMULARIO-->
+		<form action="#" method="POST" th:object="${cliente}" th:action="@{/cliente/crear}" class="row g-3" style="padding-left: 20%; padding-right: 20%; padding-top: 5%;">
+			
+			<div class="col-md-6">
+			  <label class="form-label">Nombre</label>
+			  <input type="text" th:field="*{nombreCliente}" class="form-control" id="nombreCliente">
+			</div>
+			<div class="col-md-4">
+			  <label class="form-label">Teléfono</label>
+			  <input type="text" th:field="*{telefonoCliente}" class="form-control" placeholder="601234567" id="telefonoCliente">
+			</div>
+			<div class="col-md-6">
+			  <label class="form-label">eMail</label>
+			  <input type="text" th:field="*{correoCliente}" class="form-control" placeholder="ejemplo@ejemplo.com" id="correoCliente">
+			</div>
+			<div class="col-10">
+			  <label class="form-label">Dirección</label>
+			  <input type="text" th:field="*{direccionCliente}" class="form-control" id="direccionCliente">
+			</div>
+			
+			<div class="col-12">
+			  <input type="submit" class="btn btn-primary" value="CREAR USUARIO">
+			</div>
+		</form>
+
+
+		<footer th:replace="Tema :: footer"></footer>
+	</body>
+</html>

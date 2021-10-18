@@ -1,0 +1,216 @@
+@cahrset "utf-8";
+
+h1{
+	background:rgba(242,243,244,1);
+	width:800px;
+}
+
+#menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#menu #item{
+	float:left;
+	height:60px;
+}
+
+#menu #item a:hover{
+color:white;
+background-color:gray;
+}
+
+#menu #item a{
+	color:#1B4F72;
+	padding:12px 22px;
+	display:block;
+	font-family:Arial, Helvetica;
+	font-size:16;
+	text-decoration:none;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	margin=0px auto;
+}
+
+#content{
+	float:left;
+	width:70%;
+	min-height:400px;
+	padding-top:20px;
+	padding-left:20px;
+}
+
+.field1{
+	color:black;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.field1 label{
+	font-size:18px;
+	margin-left:10px;
+}
+
+#cliente{
+	margin-left:40px;
+}
+
+.field1 input{
+	font-size:16px;
+	margin-left:10px;
+	height:30px;
+	width:120px;
+	padding-left:5px;
+}
+
+#cliente2{
+	width:230px;
+}
+
+#consect{
+	width:80px;
+}
+
+.field1 button{
+	cursor:pointer;
+	padding:10px 20px;
+	font-size:14px;
+	border:2px;
+	margin-left:20px;
+	border-radius:5px;
+	background-color:lightgray;
+}
+
+.field1 button:hover{
+	background-color:gray;
+	color:white;
+}
+
+.field2{
+	color:black;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.field2 label{
+	font-size:18px;
+	margin-left:45px;
+}
+
+#nomprod{
+	margin-left:230px;
+}
+
+#cant{
+	margin-left:70px;
+}
+
+.field3{
+	color:black;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.field3 label{
+	font-size:18px;
+	margin-left:10px;
+}
+
+.field3 input{
+	font-size:16px;
+	margin-left:10px;
+	height:30px;
+	width:120px;
+	padding-left:5px;
+}
+
+#codigo{
+	margin-left:40px;
+}
+
+#nomprod2{
+	width:230px;
+	margin-left:40px;
+}
+
+#cant2{
+	width:80px;
+}
+
+.field3 button{
+	cursor:pointer;
+	padding:10px 20px;
+	font-size:14px;
+	border:2px;
+	margin-left:20px;
+	border-radius:5px;
+	background-color:lightgray;
+}
+
+.field3 button:hover{
+	background-color:gray;
+	color:white;
+}
+
+.field4{
+	color:black;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.field4 label{
+	font-size:18px;
+	margin-left:572px;
+}
+
+.field4 input{
+	font-size:16px;
+	margin-left:40px;
+	height:30px;
+	width:120px;
+	padding-left:5px;
+}
+
+#totaliva{
+	margin-left:52px;
+}
+
+.field5{
+	color:black;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.field5 label{
+	font-size:18px;
+	margin-left:40px;
+}
+
+.field5 input{
+	font-size:16px;
+	margin-left:40px;
+	height:30px;
+	width:120px;
+	padding-left:5px;
+}
+
+.field5 button{
+	cursor:pointer;
+	padding:10px 20px;
+	font-size:14px;
+	border:2px;
+	margin-left:403px;
+	border-radius:5px;
+	background-color:lightgray;
+}
+
+.field5 button:hover{
+	background-color:gray;
+	color:white;
+}

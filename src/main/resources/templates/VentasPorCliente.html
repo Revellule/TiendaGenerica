@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel=stylesheet type="text/css" href="../static/css/EstiloClientes.css">
-		<title>Clientes</title>
+		<link rel=stylesheet type="text/css" href="EstiloVentasPorCliente.css">
+		<title>VentasPorCliente</title>
 	</head>
 	<body>
 		<header>
@@ -26,27 +26,34 @@
 			<div id="container">
 				<section id="content">
 					<form>
-						<div class="field">
-							<label>Cédula</label>
-							<input id="cd" name="cedula" type="name" autocomplete />
-							<label>Teléfono</label>
-							<input id="tel" name="telefono" type="name" autocomplete />
+						<div>
+							<h2>Total de Ventas por Cliente</h2>
+							<table>
+								<tr>
+									<th>Cédula</th>
+									<th>Nombre</th>
+									<th>Valor Total Ventas</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
 						</div>
 						<div class="field">
-							<label>Nombre Completo</label>
-							<input name="nombre" type="name" autocomplete />
-							<label>Correo Electrónico</label>
-							<input name="email" type="email" autocomplete />
-						</div>
-						<div class="field">
-							<label>Dirección</label>
-							<input id="dir" name="direcion" type="name" autocomplete />
-						</div>
-						<div class="submit">
-							<button>Consultar</button>
-							<button>Crear</button>
-							<button>Actualizar</button>
-							<button>Borrar</button>
+							<label>Total Ventas $</label>
+							<input name="totalvent" type="name" autocomplete/>
 						</div>
 					</form>
 				</section>
